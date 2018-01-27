@@ -54,7 +54,7 @@ int main(int argc,char **argv){
 
         int ref_Marker_Id=-1;
         int startOfImages=5;
-        if (string(argv[6])=="-ref"){
+        if (argc == 8 && string(argv[6])=="-ref"){
           ref_Marker_Id=stoi( argv[7]);
           startOfImages=7;
         }
